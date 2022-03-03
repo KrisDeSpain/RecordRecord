@@ -1,0 +1,70 @@
+:root {
+	--Up-Color: #2b506b;
+	--Down-Color: #1b3f59;
+	--Body-Text: #eae8ed;
+}
+
+
+*	{
+	margin: 0;
+}
+
+body {
+	background-color: var(--Down-Color);
+	color:  var(--Body-Text);
+}
+/*	 Header 	 */
+.header {
+	background-color: var(--Down-Color);
+	padding-top: 1em;
+	padding-bottom: 2em;
+}
+.header h1 {
+	color: white;
+	text-align: center;
+	text-shadow: 0 5px 1px black;
+}
+
+/*	Nav Bar 	*/
+.nav {
+	background-color: var(--Up-Color);
+	box-shadow: 0 0 5px black;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.nav ul {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+}
+.nav li {
+	display: inline-block;
+	padding: 0.5em 1em 0.5em 1em;
+}
+.nav a {
+	color: whitesmoke;
+	text-decoration: none;
+	border: 1.5px solid black;
+	padding: 6px;
+	border-radius: 6px;
+}
+.nav a:hover {
+	text-decoration: underline;
+	background-color: var(--Up-Color);
+	color: darkslateblue;
+	box-shadow: 0 0 2px black;
+}
+
+/* Main Body */
+.main {
+	min-height: 500px
+}
+
+.footer {
+	background-color: var(--Up-Color);
+	box-shadow: 0 0 5px black;
+	padding: 15px;
+	color: white;
+	min-height: 1em;
+}

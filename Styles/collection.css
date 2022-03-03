@@ -1,0 +1,20 @@
+/* Record Data Table */
+.record_table {
+	margin: auto;
+	padding: 0.25em;
+}
+.record_detail td{
+	padding: 0.5em;
+	border: 2px solid black;
+}
+.album_art {
+	width: 125px;
+	height: 125px;
+}
+.album_info ul {
+	list-style: none;
+	text-align: left;
+}
+.album_info li {
+	padding: 5px;
+}
