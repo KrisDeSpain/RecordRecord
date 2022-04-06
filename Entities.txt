@@ -1,0 +1,63 @@
+RECORD // RECORD
+Entities List
+
+USER
+--------------------
+- User ID
+- Username
+
+
+COLLECTION
+--------------------
+- Collection ID
+- Album
+
+
+WISHLIST
+--------------------
+- Wishlist ID
+- Album
+
+
+ALBUM
+--------------------
+- Album ID
+- Album Art
+- Album Title
+- Artist Name
+
+
+ALBUM GENRE
+--------------------
+- Album Genre ID
+- Album Genre Name
+
+
+------------------------------
+--		Relationships
+------------------------------
+
+<USER> 			-ONE->			<COLLECTION>
+<COLLECTION>	-ONE->			<USER>
+
+<USER> 			-ONE-> 			<WISHLIST>
+<WISHLIST>		-ONE->			<USER>
+
+<COLLECTION> 	-MANY-> 		<ALBUM>
+<ALBUM>		  	-ONE-> 			<COLLECTION>
+
+<WISHLIST>   	-MANY->			<ALBUM>
+<ALBUM>		  	-ONE-> 			<WISHLIST>
+
+
+
+
+
+--------------------
+--		Rules
+--------------------
+<USER> may <CREATE> only one <COLLECTION>
+<USER> may <CREATE> only one <WISHLIST>
+<COLLECTION> can <ADD> any number of <ALBUM>
+<WISHLIST> can <ADD> any number of <ALBUM>
+<COLLECTION> and <WISHLIST> must be <DISJOINT> in terms of <ALBUM_ID>

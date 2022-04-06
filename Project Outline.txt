@@ -1,0 +1,13 @@
+Kristofer DeSpain
+CPS 493   -   Project Outline
+
+Title: Record Record
+
+Description: 
+A website that allows users to track their own personal Vinyl Record collection. Each user will have two distinct sets of lists, a "Collections" page which will show their list of currently owned records, and a "Wishlist" page where the user can keep a running list of the records they want but have yet to actually acquire. 
+These lists will include information like Artist, Album, Genre, Album Art, etc.
+
+The websites main page will largely function as a search location where users can look up albums by either title, artist, or genre and then display the results from which they can add the album to either their collection or wishlist.
+Additionally, the user profile page could also display some simple data such as number of albums owned versus number in their wish list as well as bands ranked by number of albums curated throughout, and the users musical taste described by albums by genre.
+
+The data needed for this project is immense, so once I am beyond a working prototype I would like to look into integrating the use of the MusicBrainz Database and or API. The core data is licensed under the CC0, meaning the data sits within the public domain and free to use without restriction.

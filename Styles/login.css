@@ -1,0 +1,72 @@
+:root {
+	--Up-Color: #2b506b;
+	--Down-Color: #1b3f59;
+	--Body-Text: #eae8ed;
+}
+
+/* ---------- Log & Reg ---------- */
+.loginReg {
+	width: 45%;
+	margin: auto;
+	background-color: var(--Up-Color);
+	color: whitesmoke;
+	border: 1px solid black;
+}
+
+/* -- Toggle Buttons -- */
+.logReg_Toggle {
+	display: table;
+	width: 100%;
+	padding: 0;
+}
+.logRegBtn {
+	display: table-cell;
+	width: 45%;
+}
+.logRegBtn button {
+	margin: 0;
+	width: 100%;
+	padding: 10px;
+	color: whitesmoke;
+	background-color: var(--Down-Color);
+	border: 1px solid black;
+}
+
+
+
+/* -- Label / Input / Submit -- */
+.loginReg label {
+	display: inline-block;
+	width: 35%;
+	text-align: right;
+}
+.loginReg input {
+	width: 45%;
+	padding: 1%;
+	margin-bottom: 5px;
+}
+.loginReg button[type="submit"] {
+	display: block;
+	margin: 15px auto 0 auto;
+	text-align: center;
+	width: 30%;
+}
+/* -- Login -- */
+#logBtn {
+	background-color: var(--Up-Color);
+	box-shadow: 5px 0 3px black;
+}
+.loginForm {
+	display: block;
+}
+
+/* -- Reg -- */
+#regBtn {
+	background-color: var(--Down-Color);
+}
+#regBtnBox {
+	
+}
+.registerForm {
+	display: none;
+}
