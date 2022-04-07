@@ -1,0 +1,64 @@
+:root {
+	--Up-Color: #202b36;
+	--Down-Color: #141c24;
+	--Body-Text: #eae8ed;
+}
+
+.profile-container {
+	margin: auto;
+	width: 65%;
+	height: 85%;
+	border-radius: 20px;
+	border: 2px solid whitesmoke;
+	padding: 5%;
+	color: var(--Body-Text);
+	background-color: var(--Up-Color);
+	box-shadow: 0 0 5px black;
+}
+
+.profile-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1em;
+	grid-template-areas: 
+		"a c c"
+		"b c c"
+		"b c c";
+}
+
+.profile-pic {
+	height: 10em;
+	width: 10em;
+	grid-area: a;
+	background-color: var(--Down-Color);
+	border-radius: 10px;
+	border: 2px solid whitesmoke;
+	box-shadow: 0 0 5px black;
+}
+
+.profile-info {
+	grid-area: b;
+	height: 15em;
+}
+
+.profile-data {
+	grid-area: c;
+}
+
+.profile-info-table {
+	margin-right: 50%;
+	align-content: left;
+}
+
+.row-label {
+	padding: 0.5em;
+	font-size: 12px;
+	text-align: right;
+	border-right: 1px solid whitesmoke;
+}
+
+.row-data {
+	padding: 0.5em;
+	font-size: 16px;
+	text-align: left;
+}
