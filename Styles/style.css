@@ -1,6 +1,6 @@
 :root {
-	--Up-Color: #2b506b;
-	--Down-Color: #1b3f59;
+	--Up-Color: #202b36;
+	--Down-Color: #141c24;
 	--Body-Text: #eae8ed;
 }
 
@@ -11,7 +11,7 @@
 
 body {
 	background-color: var(--Down-Color);
-	color:  var(--Body-Tex);
+	color:  var(--Body-Text);
 }
 /* ---------- Header ---------- */
 .header {
@@ -63,8 +63,8 @@ body {
 	padding-left: 8px;
 	padding-right: 8px;
 	background-color: var(--Up-Color);
-	border-color: var(--Up-Color);
-	border-style: 2px solid;
+	border: 1.5px solid whitesmoke;
+	border-radius: 20px;
 	color: whitesmoke;
 	font-size: 14px;
 	text-align: center;

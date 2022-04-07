@@ -1,16 +1,21 @@
 :root {
-	--Up-Color: #2b506b;
-	--Down-Color: #1b3f59;
+	--Up-Color: #202b36;
+	--Down-Color: #141c24;
 	--Body-Text: #eae8ed;
 }
 
 /* ---------- Log & Reg ---------- */
+.formContainer {
+	padding: 2% 2% 5% 5%;
+}
 .loginReg {
 	width: 45%;
 	margin: auto;
 	background-color: var(--Up-Color);
 	color: whitesmoke;
-	border: 1px solid black;
+	border: 2px solid whitesmoke;
+	border-radius: 20px;
+	box-shadow: 0 0 5px black;
 }
 
 /* -- Toggle Buttons -- */
@@ -28,8 +33,11 @@
 	width: 100%;
 	padding: 10px;
 	color: whitesmoke;
-	background-color: var(--Down-Color);
-	border: 1px solid black;
+	border: none;
+	border-radius: 20px;
+}
+.logRegBtn button:hover {
+	color: lightblue;
 }
 
 
@@ -54,19 +62,14 @@
 /* -- Login -- */
 #logBtn {
 	background-color: var(--Up-Color);
-	box-shadow: 5px 0 3px black;
-}
-.loginForm {
-	display: block;
 }
 
 /* -- Reg -- */
 #regBtn {
 	background-color: var(--Down-Color);
 }
-#regBtnBox {
-	
-}
-.registerForm {
+
+
+.hide {
 	display: none;
 }

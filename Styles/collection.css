@@ -1,0 +1,54 @@
+:root {
+	--Up-Color: #202b36;
+	--Down-Color: #141c24;
+	--Body-Text: #eae8ed;
+}
+
+.album-list {
+	width: 75%;
+	margin: auto;
+	background-color: var(--Up-Color);
+	color: whitesmoke;
+	border: 2px solid whitesmoke;
+	border-radius: 20px;
+	box-shadow: 0 0 5px black;
+}
+
+.album-container{
+	margin: auto;
+	padding: 0;
+	width: 13em;
+	height: 13em;
+	transition: 1s;
+	background-color: var(--Up-Color);
+	border: 1px solid whitesmoke;
+}
+
+img {
+	width: 100%;
+	border: 2px solid black;
+	box-shadow: 0 0 5px black;
+	display: block;
+	margin: auto;
+}
+
+img:hover {
+	transition: 0.5s;
+	border: 2px solid whitesmoke;
+	box-shadow: 0 0 5px black;
+	transform: rotate3d(1, 1, 2, 10deg);
+}
+
+.album-back ul {
+	padding-top: 1em;
+}
+.album-back li {
+	padding-top: 1em;
+	list-style: none;
+	text-align: left;
+}
+
+
+.hide {
+	display: none;
+}

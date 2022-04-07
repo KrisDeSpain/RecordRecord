@@ -5,7 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="../Styles/style.css">
 	<link rel="stylesheet" type="text/css" href="../Styles/login.css">
-	<script tpye="text/javascript" src="../Scripts/nav.js"></script>
 	<title>Login</title>
 </head>
 <body>
@@ -32,52 +31,68 @@
 			<div class="loginReg">
 				<div class="logReg_Toggle">
 					<div id="logBtnBox" class="logRegBtn">
-						<button id="logBtn" onclick="log_Toggle()">Login</button>
+						<button id="logBtn">Login</button>
 					</div>
 					<div id="regBtnBox" class="logRegBtn">
-						<button id="regBtn" onclick="reg_Toggle()">Register</button>
+						<button id="regBtn">Register</button>
 					</div>
 				</div>
 				<div class="formContainer">
-				<form action="/form/submit" method="post" class="loginRegForm">
-
-					<div class="loginForm">
-						<div class="usernameForm">
-							<label>Username</label>
-							<input type="text" id="username">
-						</div>
-						<div class="passForm">
-							<label>Password</label>
-							<input type="password" id="password">
-						</div>
-						<div class="submitForm">
-							<button type="submit">Login</button>
-						</div>
-					</div>
-
-
-					<div class="registerForm">
-						<div class="usernameForm">
-							<label>Username</label>
-							<inout type="text" id="username"/>
-						</div>
-						<div class="passForm">
-							<label>Password</label>
-							<inout type="password" id="password"/>
-						</div>
-						<div class="submitForm">
-							<button type="submit">Login</button>
-						</div>
-					</div>
-
-				</form>
-				<
+					<form action="/form/submit" method="post" class="loginRegForm">
+	
+							<div class="loginForm" id="loginForm">
+								<div class="usernameForm">
+									<label>Username</label>
+									<input type="text" id="username_log">
+								</div>
+								<div class="passForm">
+									<label>Password</label>
+									<input type="password" id="pswd">
+								</div>
+								<div class="submitForm">
+									<button type="submit" id="login">Login</button>
+								</div>
+							</div>
+	
+	
+							<div class="registerForm hide" id="registerForm">
+								<div class="usernameForm">
+									<label>Username</label>
+									<input type="text" id="username_Reg"/>
+								</div>								
+								<div class="emailForm">
+									<label>Email</label>
+									<input type="text" id="email_Reg"/>
+								</div>
+								<div class="passForm">
+									<label>Password</label>
+									<input type="password" id="pswd_reg"/>
+								</div>
+									<div class="passForm">
+									<label>Re-Type Password</label>
+									<input type="password" id="pswd_redo"/>
+								</div>
+								<div class="submitForm">
+									<button type="submit" id="btn-register">Register</button>
+								</div>
+							</div>
+	
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>
 
 	<div class="footer">
 	</div>
+<!-- Scripts -->
+	<script tpye="text/javascript" 
+	src="../Scripts/nav.js"></script>
+	<script tpye="text/javascript" 
+	src="../Scripts/login_register_toggle.js"></script>
+	<script type="text/javascript"
+	src="../Scripts/register_user.js"></script>
+
 </body>
 
 </html>
