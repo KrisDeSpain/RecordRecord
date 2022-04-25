@@ -1,0 +1,67 @@
+RECORD // RECORD
+
+------------------------------
+--		Entity List
+------------------------------
+
+USER
+--------------------
+- User ID
+- Username
+- Email
+- Creation Date
+
+
+COLLECTION
+--------------------
+- Collection ID
+- User ID
+- Collection Type
+- Album List
+
+
+ALBUM LIST
+--------------------
+- Album List ID
+- Collection ID
+- Album ID
+
+
+ALBUM
+--------------------
+- Album ID
+- Album Art
+- Album Title
+- Album Release Date
+- Artist Name
+- Artist Genre
+
+
+
+------------------------------
+--		Relationships
+------------------------------
+
+<USER> 			-MANY->			<COLLECTION>
+<COLLECTION>	-ONE->			<USER>
+
+<COLLECTION> 	-ONE-> 			<ALBUM LIST>
+<ALBUM LIST>	-ONE-> 			<COLLECTION>
+
+<ALBUM LIST>   	-MANY->			<ALBUM>
+<ALBUM>		  	-ONE-> 			<ALBUM LIST>
+
+
+--------------------
+--		Rules
+--------------------
+<USER> may -CREATE- only one <COLLECTION> per -COLLECTION TYPE-
+
+<COLLECTION> is -CREATED- by one <USER>
+<COLLECTION> may -CREATE- one <ALBUM LIST>
+
+<ALBUM LIST> is -CREATED- by one <COLLECTION>
+<ALBUM LIST> may -ADD- any number of <ALBUM>
+<ALBUM LIST> may only -CONTAIN- distinct <ALBUM>
+
+<ALBUM> is -ADDED- to one <ALBUM LIST>

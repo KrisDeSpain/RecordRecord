@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="../images/Record-icon.png" type="image/icon type">
+	<link rel="stylesheet" type="text/css" href="../Styles/style.css">
+	<link rel="stylesheet" type="text/css" href="../Styles/index.css">
+	<title>Home</title>
+</head>
+<body>
+	<div class="header">
+		<h1>RECORD // RECORD</h1>
+		<hr>
+	</div>
+
+	<div class="main">
+
+		<div class=navContainer>
+			<button id="navBtn" class="navBtn" 
+			onclick="toggleNav()">Nav</button>
+
+			<div id="leftNav" class="nav">
+				<a href="index.html">Home</a>
+				<a href="collection.html">Collection</a>
+				<a href="wishlist.html">Wishlist</a>
+				<a href="login.html">Login</a>
+				<!-- Profile will be shown once user is logged in-->
+				<a href="profile.html">Profile</a>
+			</div>
+		</div>
+
+		<div class="content">
+			<div class="mainSearch">
+				<h3>Search Album Database</h3>
+				<input type="text" id="index-search" placeholder="Search Album ...">
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+	</div>
+
+	<script tpye="module" src="../Scripts/nav.js"></script>
+	<script tpye="module" src="../Scripts/search.js"></script>
+</body>
+
+</html>

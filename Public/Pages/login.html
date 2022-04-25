@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" conent="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="../images/Record-icon.png" type="image/icon type">
+	<link rel="stylesheet" type="text/css" href="../Styles/style.css">
+	<link rel="stylesheet" type="text/css" href="../Styles/login.css">
+	<title>Login</title>
+</head>
+<body>
+	<div class="header">
+		<h1>RECORD // RECORD</h1>
+		<hr>
+	</div>
+
+	<div class="main">
+
+		<div class=navContainer>
+			<button id="navBtn" class="navBtn" 
+			onclick="toggleNav()">Nav</button>
+
+			<div id="leftNav" class="nav">
+				<a href="index.html">Home</a>
+				<a href="collection.html">Collection</a>
+				<a href="wishlist.html">Wishlist</a>
+				<a href="login.html">Login</a>
+				<!-- Profile will be shown once user is logged in-->
+				<a href="profile.html">Profile</a>
+			</div>
+		</div>
+
+		<div class="content">
+			<div class="loginReg">
+				<div class="logReg_Toggle">
+					<div id="logBtnBox" class="logRegBtn">
+						<button id="logBtn">Login</button>
+					</div>
+					<div id="regBtnBox" class="logRegBtn">
+						<button id="regBtn">Register</button>
+					</div>
+				</div>
+				<div class="formContainer">
+					<form class="loginRegForm">
+	
+							<div class="loginForm" id="loginForm">
+								<p class="error"></p>
+								<div class="usernameForm">
+									<label>Username</label>
+									<input type="text" id="username_log">
+								</div>
+								<div class="passForm">
+									<label>Password</label>
+									<input type="password" id="pswd">
+								</div>
+								<div class="submitForm">
+									<button type="submit" id="login" value="Login">Login</button>
+								</div>
+							</div>
+	
+	
+							<div class="registerForm hide" id="registerForm">
+								<p class="error"></p>
+								<div class="usernameForm">
+									<label>Username</label>
+									<input type="text" id="username_Reg"/>
+								</div>								
+								<div class="emailForm">
+									<label>Email</label>
+									<input type="text" id="email_Reg"/>
+								</div>
+								<div class="passForm">
+									<label>Password</label>
+									<input type="password" id="pswd_reg"/>
+								</div>
+									<div class="passForm">
+									<label>Re-Type Password</label>
+									<input type="password" id="pswd_redo"/>
+								</div>
+								<div class="submitForm">
+									<button type="submit" id="btn-register" value="Register">Register</button>
+								</div>
+							</div>
+	
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+	</div>
+	
+<!-- Scripts -->
+	<script tpye="module" 
+	src="../Scripts/nav.js"></script>
+	<script type="module"
+	src="../Scripts/login.js"></script>
+	<script tpye="module" 
+	src="../Scripts/login_register_toggle.js"></script>
+	<script type="module"
+	src="../Scripts/register_user.js"></script>
+
+</body>
+
+</html>

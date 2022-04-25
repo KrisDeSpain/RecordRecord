@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="../images/Record-icon.png" type="image/icon type">
+	<link rel="stylesheet" type="text/css" href="../Styles/style.css">
+	<link rel="stylesheet" type="text/css" href="../Styles/collection.css">
+	<title>Wishlist</title>
+</head>
+<body>
+	<div class="header">
+		<h1>RECORD // RECORD</h1>
+		<hr>
+	</div>
+
+	<div class="main">
+
+		<div class=navContainer>
+			<button id="navBtn" class="navBtn" 
+			onclick="toggleNav()">Nav</button>
+
+			<div id="leftNav" class="nav">
+				<a href="index.html">Home</a>
+				<a href="collection.html">Collection</a>
+				<a href="wishlist.html">Wishlist</a>
+				<a href="login.html">Login</a>
+				<!-- Profile will be shown once user is logged in-->
+				<a href="profile.html">Profile</a>
+			</div>
+		</div>
+
+		<div class="content">
+			<div class="album-List">
+				<div class="album-container" id="album-container">
+					<div class="album-front" id="album-front">
+						<img src="../Images/default_album.png"/>
+					</div>
+					<div class="album-back hide" id="album-back">
+						<ul>
+							<li>Album Title</li>
+							<li>Artist</li>
+							<li>Release Date</li>
+							<li>Genre</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+	</div>
+
+	<!-- Scripts -->
+	<script tpye="text/javascript" 
+	src="../Scripts/nav.js"></script>
+	<script tpye="text/javascript" 
+	src="../Scripts/collection.js"></script>
+
+</body>
+
+</html>
