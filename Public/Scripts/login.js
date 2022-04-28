@@ -12,7 +12,7 @@ function loginFunc(){
 		{username: username, password: password})
 	.then((data) => {
 		if(!data.message) {
-			window.location.href = "Pages/index.html";
+			window.location.href = "./Pages/index.html";
 		}
 	})
 	.catch((error) => {

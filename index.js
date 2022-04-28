@@ -12,10 +12,14 @@ app.get('/', (req, res) =>
 
 //CORS middleware
 app.use(function(req, res, next) {
-	res.header('Access-Control-Allow-Origin', '*');
-	res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
-	res.header('Access-Control-Allow-Methods', 'GET,POST,PUT,DELETE,OPTIONS');
+	res.header("Access-Control-Allow-Origin", "*");
+	res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
+	res.header("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE,OPTIONS");
 	next();
+});
+
+app.get('*', function (req, res) {
+	res.sendFile(path.resolve(__dirname, 'public/pages', 'index.html' ));
 });
 
 app.use("/users", userRoutes);

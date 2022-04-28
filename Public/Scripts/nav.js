@@ -14,3 +14,9 @@ function openNav(){
 function closeNav(){
 	document.getElementById("leftNav").style.width = "0";
 }
+
+document.getElementsByClassName("navBtn").addEventListener("click",navigate());
+
+function navigate(page){
+
+}
