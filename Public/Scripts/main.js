@@ -1,5 +1,5 @@
 export async function fetchData(url='', data = {}, methodType) {
-    const response = await fetch(`http://localhost${url}`, {
+    const response = await fetch(url, {
         method: methodType,
         mode: 'cors',
         cache: 'no-cache',

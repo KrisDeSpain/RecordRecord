@@ -20,7 +20,7 @@ app.use(function(req, res, next) {
 app.use("/", pageRoute);
 app.use("/user", userRoute);
 
-app.get('*', (req, res) => {
+app.get('*', (req, res) => {	
 	res.send("Invalid URL");
 });
 

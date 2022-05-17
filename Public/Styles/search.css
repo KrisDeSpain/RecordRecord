@@ -1,5 +1,9 @@
-:root {
-	--Up-Color: #202b36;
-	--Down-Color: #141c24;
-	--Body-Text: #eae8ed;
+.search-container {
+	margin: auto;
+	padding: 1%;
+}
+
+.search-container ul{
+	list-style: none;
+	text-align: left;
 }
