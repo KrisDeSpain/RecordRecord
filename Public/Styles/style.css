@@ -68,7 +68,24 @@ body {
 	font-size: 14px;
 	text-align: center;
 }
-#navBtn:active {
+
+#logoutBtn {
+	z-index: 2;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	width: fit-content;
+	padding-left: 8px;
+	padding-right: 8px;
+	background-color: var(--Up-Color);
+	border: 1.5px solid whitesmoke;
+	border-radius: 20px;
+	color: whitesmoke;
+	font-size: 14px;
+	text-align: center;
+}
+
+#navBtn:active, #logoutBtn:active {
 	background-color: var(--Down-Color);
 	color: lightblue;
 }
@@ -85,4 +102,8 @@ body {
 	color: lightblue;
 	background-color: var(--Down-Color);
 	box-shadow: 0 0 5px black;
+}
+
+.hide {
+	display: none;
 }

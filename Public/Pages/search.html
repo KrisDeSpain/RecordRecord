@@ -19,21 +19,18 @@
 
 		<div class=navContainer>
 			<button id="navBtn" class="navBtn" 
-			onclick="toggleNav()">Nav</button>
+			onclick="">Nav</button>
 
 			<div id="leftNav" class="nav">
-				<a href="index.html">Home</a>
-				<a href="collection.html">Collection</a>
-				<a href="wishlist.html">Wishlist</a>
-				<a href="login.html">Login</a>
-				<!-- Profile will be shown once user is logged in-->
-				<a href="profile.html">Profile</a>
 			</div>
+
+			<button id="logoutBtn" class="logoutBtn hide" 
+			onclick="">Logout</button>
 		</div>
 
 		<div class="content">
 			<div class="search-container" id="search-container">
-				<span id="testValue">Hello</span>
+				<span id="search-result"></span>
 			</div>
 		</div>
 
@@ -41,10 +38,8 @@
 	</div>
 	
 <!-- Scripts -->
-	<script tpye="text/javascript" 
-	src="../Scripts/nav.js"></script>
-	<script tpye="text/javascript" 
-	src="../Scripts/search.js"></script>
+	<script type="module" src="../Scripts/main.js"></script>
+	<script tpye="module" src="../Scripts/search.js"></script>
 
 </body>
 

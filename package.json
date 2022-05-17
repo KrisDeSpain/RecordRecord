@@ -2,10 +2,10 @@
   "name": "webdevproject",
   "version": "1.0.0",
   "description": "Project Record Record",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js"
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -14,8 +14,12 @@
   "author": "Kristofer DeSpain",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
     "dotenv": "^16.0.0",
+    "ejs": "^3.1.7",
     "express": "^4.17.3",
+    "mime": "^3.0.0",
     "mysql2": "^2.3.3",
     "nodemon": "^2.0.15"
   }

@@ -1,14 +1,13 @@
-const path = require('path');
+require('dotenv').config();
 const express = require('express');
+const path = require('path');
 const app = express();
 
-const userRoutes = require("./Server/Routes/user");
+const pageRoute = require("./pageRoute")
+const userRoute = require("./Server/Routes/userRoute");
 
 app.use(express.json());
-
 app.use(express.static(path.join(__dirname + '/Public')));
-app.get('/', (req, res) => 
-	res.sendFile(path.join(__dirname, '/Public/Pages/index.html')));
 
 //CORS middleware
 app.use(function(req, res, next) {
@@ -18,12 +17,13 @@ app.use(function(req, res, next) {
 	next();
 });
 
-app.get('*', function (req, res) {
-	res.sendFile(path.resolve(__dirname, 'public/pages', 'index.html' ));
+app.use("/", pageRoute);
+app.use("/user", userRoute);
+
+app.get('*', (req, res) => {
+	res.send("Invalid URL");
 });
 
-app.use("/users", userRoutes);
-	
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Server Started on PORT ${PORT}!`));
+const PORT = process.env.PORT || 80;
+app.listen(PORT, () => console.log(`Server Started on PORT ${PORT}`));

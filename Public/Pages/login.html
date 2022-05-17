@@ -19,16 +19,13 @@
 
 		<div class=navContainer>
 			<button id="navBtn" class="navBtn" 
-			onclick="toggleNav()">Nav</button>
+			onclick="">Nav</button>
 
 			<div id="leftNav" class="nav">
-				<a href="index.html">Home</a>
-				<a href="collection.html">Collection</a>
-				<a href="wishlist.html">Wishlist</a>
-				<a href="login.html">Login</a>
-				<!-- Profile will be shown once user is logged in-->
-				<a href="profile.html">Profile</a>
 			</div>
+
+			<button id="logoutBtn" class="logoutBtn hide" 
+			onclick="">Logout</button>
 		</div>
 
 		<div class="content">
@@ -42,10 +39,11 @@
 					</div>
 				</div>
 				<div class="formContainer">
-					<form class="loginRegForm">
+					<div class="loginRegForm">
 	
-							<div class="loginForm" id="loginForm">
-								<p class="error"></p>
+							<form class="loginForm" id="loginForm"
+							action="/login" method="POST">
+								<p id="log_error" class="error"></p>
 								<div class="usernameForm">
 									<label>Username</label>
 									<input type="text" id="username_log">
@@ -55,20 +53,21 @@
 									<input type="password" id="pswd">
 								</div>
 								<div class="submitForm">
-									<button type="submit" id="login" value="Login">Login</button>
+									<button type="submit" id="login">Login</button>
 								</div>
-							</div>
+							</form>
 	
 	
-							<div class="registerForm hide" id="registerForm">
-								<p class="error"></p>
+							<form class="registerForm hide" id="registerForm"
+							action="/register" method="POST">
+								<p id="reg_error" class="error"></p>
 								<div class="usernameForm">
 									<label>Username</label>
-									<input type="text" id="username_Reg"/>
+									<input type="text" id="username_reg"/>
 								</div>								
 								<div class="emailForm">
 									<label>Email</label>
-									<input type="text" id="email_Reg"/>
+									<input type="text" id="email_reg"/>
 								</div>
 								<div class="passForm">
 									<label>Password</label>
@@ -79,11 +78,12 @@
 									<input type="password" id="pswd_redo"/>
 								</div>
 								<div class="submitForm">
-									<button type="submit" id="btn-register" value="Register">Register</button>
+									<button type="submit" id="btn-register"
+									action="/register" method="POST">Register</button>
 								</div>
-							</div>
+							</form>
 	
-					</form>
+						</div>
 				</div>
 			</div>
 		</div>
@@ -93,14 +93,8 @@
 	</div>
 	
 <!-- Scripts -->
-	<script tpye="module" 
-	src="../Scripts/nav.js"></script>
-	<script type="module"
-	src="../Scripts/login.js"></script>
-	<script tpye="module" 
-	src="../Scripts/login_register_toggle.js"></script>
-	<script type="module"
-	src="../Scripts/register_user.js"></script>
+	<script type="module" src="../Scripts/main.js"></script>
+	<script type="module" src="../Scripts/register_user.js"></script>
 
 </body>
 
