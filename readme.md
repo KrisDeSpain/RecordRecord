@@ -45,7 +45,7 @@ The node command "node app.js" will initialize the app and allow for a connectio
 
 <h5>Homepage</h5>
 
-![[Pasted image 20220517205643.png]]
+![image](https://user-images.githubusercontent.com/77855198/168936143-82e22fdf-23d4-4caa-926a-33c588f05525.png)
 
 <h5>Login / Register</h5>
 
