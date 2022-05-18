@@ -28,8 +28,11 @@ The app is not finished in its current state, and would take a bit more work to 
 - MySQL
 
 <h3>Entity Relationship Diagram</h3>
+
 The following ERD is based on the final intneded design, and may vary in its form when compared to the current build.
+
 ![image](https://user-images.githubusercontent.com/77855198/168941445-98169b73-b03f-4cba-9b92-8687a360110c.png)
+
 ![image](https://user-images.githubusercontent.com/77855198/168941480-c9141517-160b-4b07-826a-cd9694663ef0.png)
 
 <h3>Guide to Use </h3>
