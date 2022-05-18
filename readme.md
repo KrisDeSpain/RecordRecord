@@ -42,13 +42,16 @@ The node command "node app.js" will initialize the app and allow for a connectio
 
 	
 <h3>Screenshots </h3>
+<hr>
 
 <h5>Homepage</h5>
 
-![image](https://user-images.githubusercontent.com/77855198/168936143-82e22fdf-23d4-4caa-926a-33c588f05525.png)
+![image](https://user-images.githubusercontent.com/77855198/168936259-7b41028e-cb66-45db-a87f-b7f35297bdd0.png)
 
 <h5>Login / Register</h5>
 
-![[Pasted image 20220517205741.png]]
+![image](https://user-images.githubusercontent.com/77855198/168936278-c01dd5bd-153a-4e23-8389-16e041859916.png)
+![image](https://user-images.githubusercontent.com/77855198/168936291-b5602e7c-b441-43a2-b293-4bcd5c0d0df3.png)
 
-![[Pasted image 20220517205801.png]]
+<h5>Album Search</h5>
+
