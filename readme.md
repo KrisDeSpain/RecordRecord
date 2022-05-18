@@ -55,3 +55,4 @@ The node command "node app.js" will initialize the app and allow for a connectio
 
 <h5>Album Search</h5>
 
+![image](https://user-images.githubusercontent.com/77855198/168940651-47f57fba-7c7d-4545-89f2-88fc752d21ee.png)
