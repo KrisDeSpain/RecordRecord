@@ -1,10 +1,12 @@
 const api_key = "&api_key=164ef3a75ffc926e28f67551c528c2d8&format=json"
 const base_url = "http://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist="
 const searchBox = document.getElementById("index-search");
+const searchList = document.getElementById("albumList");
 
 if(searchBox){
 	searchBox.addEventListener('keypress', function (e) {
 		if(e.key === "Enter"){
+			searchList.innerHTML = ``;
 			let searchValue = document.getElementById("index-search").value;
 			querySearch(searchValue);
 		}
@@ -34,7 +36,6 @@ async function fetchAPIData(url){
     }
 }
 
-const searchList = document.getElementById("albumList");
 function outputSearch (data){
 	document.getElementById('search-container').classList.remove('hide');
 	const searchList = document.getElementById("albumList");
